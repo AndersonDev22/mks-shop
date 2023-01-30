@@ -39,14 +39,14 @@ export function CardSelect({ product }: ProductCardSelectProps) {
           fontSize="16px"
           lineHeigh="17px"
         />
-        <div>
+        <S.groupCounter>
           <Counter
             onIncrease={handleIncrease}
             onDecrease={handleDecrease}
             quantity={product.quantity}
           />
           <S.CardPrice>{formatPriceBR}</S.CardPrice>
-        </div>
+        </S.groupCounter>
       </S.ActionsGroup>
 
       <S.ButtonRemove onClick={handleRemove}>

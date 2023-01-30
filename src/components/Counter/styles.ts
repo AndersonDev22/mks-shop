@@ -5,10 +5,11 @@ import { defaultTheme } from '../../styles/themes/default';
 export const CounterContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 7rem;
+  width: 5rem;
   padding: 0.4rem;
   border: 1px solid ${defaultTheme['gray-100']};
   border-radius: 6px;
+  margin-top: 3px;
 `;
 
 export const Quantity = styled.input`

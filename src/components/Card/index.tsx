@@ -4,7 +4,6 @@ import { RiShoppingBag3Line } from 'react-icons/ri';
 
 import { defaultTheme } from '../../styles/themes/default';
 import { priceFormatter } from '../../types/formatter';
-// import { IProducts, IProductsResponse } from '../../types/products';
 import * as S from './styles';
 
 import { useState } from 'react';
@@ -25,15 +24,7 @@ interface ICardProps {
 }
 
 export function Card({ product }: ICardProps) {
-  const [quantity, setQuantity] = useState(1);
-
-  function handleIncrease() {
-    setQuantity((state) => state + 1);
-  }
-
-  function handleDecrease() {
-    setQuantity((state) => state - 1);
-  }
+  const [quantity] = useState(1);
 
   const { addProductToCart } = useCart();
 

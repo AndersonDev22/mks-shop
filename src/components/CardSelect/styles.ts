@@ -40,13 +40,13 @@ export const ActionsGroup = styled.div`
   align-items: flex-start;
   margin-left: 1rem;
   gap: 8px;
+`;
 
-  div {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 20px;
-  }
+export const groupCounter = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
 `;
 
 export const ButtonRemove = styled.button`

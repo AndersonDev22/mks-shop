@@ -8,29 +8,38 @@ import { defaultTheme } from '../../styles/themes/default';
 import { priceFormatter } from '../../types/formatter';
 import * as S from './styles';
 
-import { GeneralText } from '..';
+import { CardSelect, GeneralText } from '..';
 
 type StyledContentVariants = Stitches.VariantProps<typeof S.StyledContent>;
 
 interface IContentProps {
   openingPosition?: 'left' | 'right' | 'top' | 'bottom';
   card: ReactNode;
-  content: ReactNode;
 }
 
 export function Drawer({
   openingPosition = 'left',
-  card,
-  content
+  card
 }: IContentProps & StyledContentVariants) {
-  const { cartItemsTotal } = useCart();
+  const { cartItemsTotal, cartItems } = useCart();
 
   return (
     <Dialog.Root>
       <S.Trigger>{card}</S.Trigger>
-      {/* <S.StyledOverlay /> */}
       <S.StyledContent openingPosition={openingPosition}>
-        {content}
+        <GeneralText
+          text="Carrinho de Compras:"
+          color={defaultTheme.white}
+          fontSize="28px"
+          fontWeight={700}
+          lineHeigh="15px"
+          margin="5px 0"
+        />
+        <S.ProductsListContent>
+          {cartItems?.map((item) => (
+            <CardSelect key={item.id} product={item} />
+          ))}
+        </S.ProductsListContent>
         <S.Total>
           <GeneralText
             text="Valor Total:"

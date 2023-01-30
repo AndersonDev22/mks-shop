@@ -87,12 +87,24 @@ export const StyledContent = styled(Dialog.Content, {
   }
 });
 
+export const ProductsListContent = styled('div', {
+  width: '100%',
+  height: '100%',
+  gap: '1.5rem',
+  display: 'flex',
+  justifyContent: 'flex-start',
+  flexDirection: 'column',
+  alignItems: 'center',
+  backgroundColor: `${defaultTheme['blue-700']}`,
+  padding: '15px'
+});
+
 export const ButtonFinalize = styled('button', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   width: '100%',
-  padding: '10px',
+  padding: '20px',
   backgroundColor: `${defaultTheme.black}`
 });
 
@@ -101,6 +113,6 @@ export const Total = styled('div', {
   width: '100%',
   justifyContent: 'space-between',
   alignItems: 'center',
-  padding: '12px',
+  padding: '18px',
   marginBottom: '10px'
 });

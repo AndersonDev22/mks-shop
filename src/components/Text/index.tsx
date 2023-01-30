@@ -14,11 +14,11 @@ export interface ITextProps {
 }
 
 export function GeneralText({
-  text,
+  text = '',
   padding = '',
-  margin,
-  width,
-  color,
+  margin = '',
+  width = '',
+  color = '',
   fontSize = '16px',
   backgroundColor = '',
   borderRadius = '',

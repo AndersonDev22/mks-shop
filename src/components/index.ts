@@ -7,6 +7,5 @@ export * from './Header';
 export * from './Logo';
 export * from './ButtonMyCar';
 export * from './Posts';
-export * from './ProductsList';
 export * from './Text';
 export * from './ButtonMyCar';

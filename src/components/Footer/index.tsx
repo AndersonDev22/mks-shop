@@ -12,7 +12,7 @@ export function Footer() {
         fontSize="12px"
         lineHeigh="15px"
       />
-      <S.FooterLink href="/">
+      <S.FooterLink href="https://luizanderson.dev.br/" target="_blank">
         <GeneralText
           text=" anderson.dev22"
           fontWeight={600}

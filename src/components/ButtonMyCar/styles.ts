@@ -9,9 +9,3 @@ export const ButtonMyCar = styled.div`
   border: none;
   padding: 15px;
 `;
-
-export const ButtonMyCarContent = styled.div`
-  display: flex;
-  align-items: flex-end;
-  gap: 6px;
-`;

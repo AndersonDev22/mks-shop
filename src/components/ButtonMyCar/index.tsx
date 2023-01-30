@@ -1,5 +1,7 @@
 import { BsCartCheckFill } from 'react-icons/bs';
 
+import { GeneralText } from '..';
+
 import { useCart } from '../../hooks/useCart';
 import * as S from './styles';
 
@@ -8,8 +10,11 @@ export function MyCar() {
   return (
     <S.ButtonMyCar>
       <BsCartCheckFill size={20} />
-      {/* <GeneralText text="0" fontSize="18px" fontWeight={700} lineHeigh="22px" /> */}
-      {cartQuantity >= 1 && <span>{cartQuantity}</span>}
+      {cartQuantity >= 1 ? (
+        <GeneralText text={cartQuantity} fontWeight={700} fontSize="20px" />
+      ) : (
+        <GeneralText text="0" fontWeight={700} fontSize="20px" />
+      )}
     </S.ButtonMyCar>
   );
 }

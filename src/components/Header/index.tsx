@@ -1,4 +1,4 @@
-import { Drawer, Logo, MyCar, ProductsList } from '..';
+import { Drawer, Logo, MyCar } from '..';
 
 import * as S from './styles';
 
@@ -7,11 +7,7 @@ export function Header() {
     <S.HeaderContainer>
       <S.HeaderContent>
         <Logo />
-        <Drawer
-          card={<MyCar />}
-          content={<ProductsList />}
-          openingPosition="right"
-        />
+        <Drawer card={<MyCar />} openingPosition="right" />
       </S.HeaderContent>
     </S.HeaderContainer>
   );
