@@ -19,3 +19,13 @@ export const ProductsListContent = styled.div`
   background-color: ${defaultTheme['blue-700']};
   padding: 2rem 0;
 `;
+
+export const Total = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  flex-shrink: 0;
+  margin: auto;
+`;

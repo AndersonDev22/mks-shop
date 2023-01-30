@@ -1,7 +1,7 @@
 import * as S from './styles';
 
 export interface ITextProps {
-  text: string | undefined;
+  text: string | number | undefined;
   padding?: string;
   margin?: string;
   width?: string;

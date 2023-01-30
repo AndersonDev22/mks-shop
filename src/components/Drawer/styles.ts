@@ -95,3 +95,12 @@ export const ButtonFinalize = styled('button', {
   padding: '10px',
   backgroundColor: `${defaultTheme.black}`
 });
+
+export const Total = styled('div', {
+  display: 'flex',
+  width: '100%',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: '12px',
+  marginBottom: '10px'
+});
