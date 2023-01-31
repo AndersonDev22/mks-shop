@@ -116,3 +116,13 @@ export const Total = styled('div', {
   padding: '18px',
   marginBottom: '10px'
 });
+
+export const ButtonClose = styled('button', {
+  all: 'unset',
+  display: 'flex',
+  // width: '100%',
+  justifyContent: 'center',
+  outline: 'none',
+  marginLeft: '90%',
+  cursor: 'pointer'
+});

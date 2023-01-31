@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { BsXCircleFill } from 'react-icons/bs';
 
 import * as Dialog from '@radix-ui/react-dialog';
 import type * as Stitches from '@stitches/react';
@@ -27,13 +28,18 @@ export function Drawer({
     <Dialog.Root>
       <S.Trigger>{card}</S.Trigger>
       <S.StyledContent openingPosition={openingPosition}>
+        <Dialog.DialogClose asChild>
+          <S.ButtonClose>
+            <BsXCircleFill size={30} />
+          </S.ButtonClose>
+        </Dialog.DialogClose>
         <GeneralText
           text="Carrinho de Compras:"
           color={defaultTheme.white}
           fontSize="28px"
           fontWeight={700}
           lineHeigh="15px"
-          margin="5px 0"
+          margin="10px 0"
         />
         <S.ProductsListContent>
           {cartItems?.map((item) => (

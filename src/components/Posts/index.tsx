@@ -13,7 +13,7 @@ export function Posts() {
   if (error) {
     return <p>Erro ao buscar dados!</p>;
   }
-  console.log('data ->', data);
+
   return (
     <S.PostContainer>
       <S.PostContent>

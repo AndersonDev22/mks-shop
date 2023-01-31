@@ -1,5 +1,6 @@
+import { GeneralText } from '..';
+
 import { defaultTheme } from '../../styles/themes/default';
-import { GeneralText } from '../Text';
 import * as S from './styles';
 
 export function Logo() {
