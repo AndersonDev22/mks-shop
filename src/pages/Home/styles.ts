@@ -5,4 +5,5 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  min-height: 100vh;
 `;

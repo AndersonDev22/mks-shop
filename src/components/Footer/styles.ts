@@ -12,6 +12,8 @@ export const FooterContainer = styled.div`
   bottom: 0;
   flex-shrink: 0;
   margin: auto;
+  position: absolute;
+  left: 0;
 `;
 
 export const FooterLink = styled.a`
