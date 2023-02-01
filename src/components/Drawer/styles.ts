@@ -96,7 +96,8 @@ export const ProductsListContent = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
   backgroundColor: `${defaultTheme['blue-700']}`,
-  padding: '15px'
+  padding: '15px',
+  overflowX: 'hidden'
 });
 
 export const ButtonFinalize = styled('button', {
