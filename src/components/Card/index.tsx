@@ -37,7 +37,7 @@ export function Card({ product }: ICardProps) {
   return (
     <S.CardContainer>
       <S.Image>
-        <img src={product.photo} alt="" width={150} height={150} />
+        <img src={product.photo} alt="" width={130} height={130} />
       </S.Image>
       <S.CardContent>
         <S.CardPrice>

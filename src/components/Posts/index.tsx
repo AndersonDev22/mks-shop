@@ -1,9 +1,8 @@
 import 'react-loading-skeleton/dist/skeleton.css';
 
-import { Card } from '..';
+import { Card, CardSkeleton } from '..';
 
 import { UseQueryProducts } from '../../hooks/useQueryProducts';
-import { CardSkeleton } from '../CardSkeleton';
 import * as S from './styles';
 
 export function Posts() {

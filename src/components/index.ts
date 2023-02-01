@@ -9,3 +9,4 @@ export * from './ButtonMyCar';
 export * from './Posts';
 export * from './Text';
 export * from './ButtonMyCar';
+export * from './CardSkeleton';
