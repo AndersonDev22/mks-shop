@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, button{ 
-    font-family: 'Montserrat', sans-serif !important
+    font-family: Montserrat, sans-serif !important
   }
 
   button{

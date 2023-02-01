@@ -25,7 +25,6 @@ interface ICardProps {
 
 export function Card({ product }: ICardProps) {
   const [quantity] = useState(1);
-
   const { addProductToCart } = useCart();
 
   function handleAddToCart() {

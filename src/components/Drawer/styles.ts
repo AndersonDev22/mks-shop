@@ -120,9 +120,9 @@ export const Total = styled('div', {
 export const ButtonClose = styled('button', {
   all: 'unset',
   display: 'flex',
-  // width: '100%',
   justifyContent: 'center',
   outline: 'none',
   marginLeft: '90%',
+  marginTop: '10px',
   cursor: 'pointer'
 });

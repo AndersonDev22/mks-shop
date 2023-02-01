@@ -42,5 +42,5 @@ export const Image = styled.figure`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 `;

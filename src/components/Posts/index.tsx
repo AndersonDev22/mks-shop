@@ -19,9 +19,9 @@ export function Posts() {
                 <S.Image>
                   <Skeleton width={150} height={150} />
                 </S.Image>
-                <Skeleton count={1} width={70} style={{ float: 'left' }} />
+                <Skeleton count={1} width={70} />
                 <Skeleton count={1} />
-                <Skeleton count={1} width={50} style={{ float: 'left' }} />
+                <Skeleton count={1} width={50} />
                 <Skeleton count={4} />
               </S.PostCardContainer>
             ))

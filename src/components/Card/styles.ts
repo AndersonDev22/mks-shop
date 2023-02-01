@@ -52,6 +52,7 @@ export const CardButton = styled.button`
   gap: 6px;
   cursor: pointer;
   opacity: 80%;
+  margin-top: 10px;
 
   &:hover {
     opacity: 100%;
