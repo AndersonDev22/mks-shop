@@ -63,7 +63,10 @@ export function Drawer({
           />
         </S.Total>
 
-        <S.ButtonFinalize>
+        <S.ButtonFinalize
+          onClick={() => alert('Compra Finalizada com sucesso!!!')}
+          disabled={cartItemsTotal < 1}
+        >
           <GeneralText
             text="Finalizar Compra"
             fontSize="28px"
